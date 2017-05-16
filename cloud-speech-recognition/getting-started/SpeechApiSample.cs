@@ -114,7 +114,8 @@ namespace Ai.Olami.Example
 
             StringBuilder httpURL = new StringBuilder(apiBaseUrl)
                 .Append("?")
-                .Append(GetBasicQueryString(apiName, seqValue));
+                .Append(GetBasicQueryString(apiName, seqValue))
+                .Append("&stop=1");
 
             // Request speech recognition service by HTTP GET
             Console.WriteLine("Sending 'HTTP POST' request to URL : " + httpURL.ToString());
