@@ -27,7 +27,7 @@ namespace Ai.Olami.Example
     {
         static void Main(string[] args)
         {
-            if (args.Length < 4)
+            if (args.Length < 5)
             {
                 Console.WriteLine("\n\n[Error] Missing args! Usage:\n");
                 Console.WriteLine(" - args[0]: api_url");
