@@ -144,8 +144,7 @@ namespace Ai.Olami.Example
         /// <returns>Basic query string collection</returns>
         private StringBuilder GetBasicQueryString(string apiName, string seqValue)
         {
-            double timestamp = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
-
+            double timestamp = DateTimeOffset.Now.ToUnixTimeMilliseconds();
             // Prepare message to generate an MD5 digest.
             StringBuilder signMsg = new StringBuilder()
                 .Append(appSecret)
