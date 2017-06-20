@@ -61,7 +61,7 @@ namespace Ai.Olami.Example
         public string GetRecognitionResult(string apiName, string inputText)
         {
             string result;
-            double timestamp = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
+            double timestamp = DateTimeOffset.Now.ToUnixTimeMilliseconds();
 
             // Prepare message to generate an MD5 digest.
             StringBuilder signMsg = new StringBuilder()
