@@ -94,6 +94,7 @@ namespace Ai.Olami.Example
                 {
                     apiParam = new NameValueCollection()
                     {
+			{ "_from", "c#" },
                         { "appkey", appKey },
                         { "api", NluApiSample.API_NAME_SEG },
                         { "timestamp", timestamp.ToString() },
@@ -105,6 +106,7 @@ namespace Ai.Olami.Example
                 {
                     apiParam = new NameValueCollection()
                     {
+			{ "_from", "c#" },
                         { "appkey", appKey },
                         { "api", NluApiSample.API_NAME_NLI },
                         { "timestamp", timestamp.ToString() },
