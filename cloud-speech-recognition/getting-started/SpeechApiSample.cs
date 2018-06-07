@@ -167,8 +167,7 @@ namespace Ai.Olami.Example
 
             // Assemble all the HTTP parameters you want to send
             StringBuilder query = new StringBuilder()
-                .Append("&_from=c#")
-		.Append("&appkey=")
+		.Append("appkey=")
                 .Append(appKey)
                 .Append("&api=")
                 .Append(apiName)
@@ -177,7 +176,8 @@ namespace Ai.Olami.Example
                 .Append("&sign=")
                 .Append(sign)
                 .Append("&seq=")
-                .Append(seqValue);
+                .Append(seqValue)
+		.Append("&_from=c#");
 
             return query;
         }
