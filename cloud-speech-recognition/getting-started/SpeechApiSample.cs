@@ -177,7 +177,7 @@ namespace Ai.Olami.Example
                 .Append(sign)
                 .Append("&seq=")
                 .Append(seqValue)
-		.Append("&_from=c#");
+		.Append("&_from=csharp");
 
             return query;
         }
